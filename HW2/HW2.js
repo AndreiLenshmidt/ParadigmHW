@@ -3,8 +3,8 @@
 let num = 1;
 
 while(num) {
-
-    num = prompt("Input a number", "");
+    //num - целое число от 1 до 9
+    num = Math.floor(prompt("Input a number", ""));
 
     if(num >=1 & num <= 9) {
         let count = 1;
