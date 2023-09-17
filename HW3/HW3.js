@@ -7,7 +7,7 @@ class Game {
         this.cross = document.querySelector(".left").cloneNode(true);
         this.circle = document.querySelector(".right").cloneNode(true);
         this.wins = ['.item1 .item2 .item3', '.item4 .item5 .item6', '.item7 .item8 .item9',
-                    '.item1" .item4 .item7', '.item2 .item5 .item8', '.item3 .item6 .item9',
+                    '.item1 .item4 .item7', '.item2 .item5 .item8', '.item3 .item6 .item9',
                     '.item1 .item5 .item9', '.item3 .item5 .item7',];
         this.linePos = '';
         this.winLines = new Map();
