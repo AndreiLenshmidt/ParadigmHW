@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    gap: 1vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows:  1fr 1fr 1fr; /* 3 строки */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.wrapped {
+    width: 100vw;
+    height: 100vh;
+    background-color: #a6c2ce;
+}
+
+.game_space {
+    background-color: #cae2ec;
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0vh 0vh 10vh 2vh #6766ef;
+}
+
+.left {
+    width: 15vh;
+    height: 15vh;
+    background-color: #dcff0061;
+    position: absolute;
+    left: 5vh;
+    top: 20%;
+}
+
+.cross {
+    width: 13vh;
+    height: 4vh;
+    position: relative;
+}
+
+.line1 {
+    width: 13vh;
+    height: 1vh;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 43%;
+    background-color: #5b56efe3;
+}
+.line2 {
+    width: 13vh;
+    height: 1vh;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 43%;
+    background-color: #5b56efe3;
+}
+
+.right {
+    width: 15vh;
+    height: 15vh;
+    box-sizing: border-box;
+    background-color: #dcff0061;
+    position: absolute;
+    right: 5vh;
+    top: 20%;
+}
+
+.circle {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    border:1vh solid #5b56efe3; 
+}
+
+.winsCircle {
+    position: absolute;
+    right: 5vh;
+    top: 40%;
+    font-family: 'Barriecito', cursive;
+	font-size:4vh;
+	color:#5b56efe3;
+}
+
+.drawCircle {
+    position: absolute;
+    right: 5vh;
+    top: 50%;
+    font-family: 'Barriecito', cursive;
+	font-size:4vh;
+	color:#5b56efe3;
+}
+
+.winsCross {
+    position: absolute;
+    left: 5vh;
+    top: 40%;
+    font-family: 'Barriecito', cursive;
+	font-size:4vh;
+	color:#5b56efe3;
+}
+
+.drawCross {
+    position: absolute;
+    left: 5vh;
+    top: 50%;
+    font-family: 'Barriecito', cursive;
+	font-size:4vh;
+	color:#5b56efe3;
+}
+
+.messages {
+    font-family: 'Barriecito', cursive;
+	font-size:4vh;
+	color:#d52121e3;
+}
+
+.field {
+    width: 50vh;
+    height: 50vh;
+    box-shadow: 0vh 0vh 2vh 1vh #6766ef;
+    border: 0.2vh solid #5b56efe3;
+}
+
+.items {
+    background-color: #dcff0061;
+    border: 0.2vh solid #5b56efe3;
+    position: relative;
+}
+
+.btn {
+    padding: 0.5vh 5vh;
+    background-color: #a6c2ce;
+    border-radius: 3vh;
+    font-family: 'Barriecito', cursive;
+	font-size:9vh;
+	color:#5b56efe3;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.CN {
+    left: 0.7vh;
+    top: 0.7vh;
+    right: 0;
+    background-color: transparent;
+}
+
+.none {
+    display: none;
+}
+
+.winLine1 {
+    position: absolute;
+    width: 50vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    top: 12.6vh;
+    left: 25vh;
+}
+.winLine2 {
+    position: absolute;
+    width: 50vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    top: 29vh;
+    left: 25vh;
+}
+.winLine3 {
+    position: absolute;
+    width: 50vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    top: 45.6vh;
+    left: 25vh;
+}
+.winLine4 {
+    position: absolute;
+    width: 50vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    transform: rotate(90deg);
+    top: 29vh;
+    left: 8.6vh;
+}
+.winLine5 {
+    position: absolute;
+    width: 50vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    transform: rotate(90deg);
+    top: 29vh;
+    left: 25vh;
+}
+.winLine6 {
+    position: absolute;
+    width: 50vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    transform: rotate(90deg);
+    top: 29vh;
+    left: 41.4vh;
+}
+.winLine7 {
+    position: absolute;
+    width: 69vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    transform: rotate(45deg);
+    top: 29vh;
+    left: 15.5vh;
+}
+.winLine8 {
+    position: absolute;
+    width: 69vh;
+    height: 2vh;
+    background-color: #d52121e3;
+    transform: rotate(-45deg);
+    top: 29vh;
+    left: 15.5vh;
+}
