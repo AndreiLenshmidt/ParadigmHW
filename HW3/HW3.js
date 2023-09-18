@@ -76,7 +76,7 @@ class Game {
                 this.drawLine(win);
                 document.querySelector(".winsCircle>span").textContent = this.circleWins;
                 return 2;
-            } else if (this.field.size === 9){
+            } else if (this.field.size === 9 && win ==='.item3 .item5 .item7'){
                 this.gameOver = true;
                 this.drows++;
                 document.querySelector(".drawCircle>span").textContent = this.drows;
